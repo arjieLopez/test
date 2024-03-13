@@ -1,0 +1,418 @@
+body{
+	width:100%; 
+	margin:0px; 
+	background:url('images/body-bg.jpg') repeat-x;
+}
+
+/*header style*/
+#wrapper {width:1000px; margin:0 auto; position: relative; z-index: 2;}
+
+#logo {margin-top:34px; margin-bottom:40px;}
+
+#nav ul {margin-left:-55px;}
+
+#nav li{list-style:none; display:inline-block; margin-left:15px;}
+
+a {font:12px Arial; text-decoration:none;}
+
+#nav #home:link {
+	color:white;
+	background: url('images/nav-left.jpg') no-repeat left, url('images/nav-right.jpg') no-repeat right, url('images/nav-mid.jpg') repeat-x;
+	padding:9px 20px;
+}
+
+#nav #home:visited { color:white;}
+
+#nav a:hover {
+	color:white;
+	background: url('images/nav-left.jpg') no-repeat left, url('images/nav-right.jpg') no-repeat right, url('images/nav-mid.jpg') repeat-x;
+	padding:8px 20px;
+}
+
+/*banner style*/
+#banner {background:white; margin-top:45px; height:363px;}
+
+#banner img {margin:10px; float:left;}
+
+#quick-quote {
+	background:url('images/form-bg.jpg') repeat-x;
+	width:300px;
+	float:left;
+	margin-top:10px;
+	padding:2px 19px;
+}
+
+#quick-quote h2{color:white; font:20px "Trebuchet MS";}
+#quick-quote span{
+	color:white;
+	font:12px "Trebuchet MS";
+	line-height: 30px;
+}
+
+#quick-quote #in{
+	border:5px solid white;
+	border-radius:5px;
+	font:12px "Trebuchet MS";
+	width:300px;
+}
+
+#btn {
+	background-image:linear-gradient(#757474, black);
+	margin-top:13px;
+	width:100px;
+	padding:8px;
+	font:12px "Trebuchet MS";
+	color:white;
+}
+
+/*Add-ons*/
+
+#main{
+	font: 12px Arial;
+	width: 1100px;
+}
+
+.container{
+	float: left;
+	background-image: linear-gradient(rgba(240,240,240,1), rgba(240,240,240,0));
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 70px 20px 60px 0px;
+	padding: 10px 0px 10px 20px;
+	width: 300px;
+}
+
+.container h1{
+	margin: 2px 0px 10px 0px;
+	font-weight: lighter;
+}
+
+.highlight{
+	color: rgb(228,171,40);
+}
+
+.para{
+	float: left;
+	position: relative;
+	top: -5px;
+	width: 200px;
+	height: 100px;
+}
+
+.box{
+	float: left;
+	background-color: rgb(213, 213, 213);
+	width: 80px;
+	height: 80px;
+	border: 3px solid white;
+	margin: 5px;
+	box-shadow: 0 0 0 2px rgb(211, 211, 211);
+}
+
+.link{
+	clear: both;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	text-decoration: underline;
+	
+}
+
+#footer{
+	clear: both;
+	width: 1100px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#ftContainer{
+	width: 1100px;
+}
+
+.ftElements, #privacy{
+	float: left;
+	color: white;
+	font-size: 12px;
+}
+
+#privacy{
+	text-decoration: underline;
+}
+
+#half1{
+	display: flex;
+	justify-content: space-between;
+	width: 280px;
+	margin: 10px;
+}
+
+#half2{
+	display: flex;
+	justify-content: space-between;
+	width: 490px;
+	margin: 10px;
+}
+
+#subscribe{
+	float: left;
+	width: 325px;
+	padding-left: 150px;
+}
+
+#subscribe span{
+	font-size: 12px;
+	color: white;
+}
+
+#ftIn{
+	position: relative;
+	top: 5px;
+	width: 700px;
+}
+
+#ftTb{
+	float: left;
+}
+
+#ftBtn{
+	float: left;
+	position: relative;
+	top: -12px;
+	left: 8px;
+}
+
+#textbox{
+	width: 170px;
+	height: 35px;
+	border: white;
+	border-radius:2px;
+}
+
+#footerBg{
+	background: url(images/footer-bg.jpg) repeat-x;
+	height: 95px;
+	width: 100vw;
+	position: absolute;
+	top: 838px;
+	z-index: 0;
+}
+
+/*--Media Query--*/
+
+/*Laptop*/
+@media screen and (max-width: 1200px){
+	body{
+		padding-left: 2vw;
+		max-width: 1200px;
+	}
+	#footerBg{
+		position: absolute;
+		left: -20px;
+		width: 110vw;
+		z-index: 1;
+	}
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px){
+
+	*{box-sizing: border-box;}
+
+	body{
+		display: block;
+		justify-content: center;
+		background-image: none;
+		max-width: 700px;
+		margin: auto;
+	}
+
+	#logo img{
+		max-width: 500px;
+	}
+
+	a{font-size: 10px;}
+
+	#nav ul{
+		display: flex;
+		justify-content: space-between;
+		max-width: 700px;
+	}
+
+	#banner{
+		position: relative;
+		top: -40px;
+		left: -15px;
+		background-image:linear-gradient(rgb(120,115,85), rgb(46,34,38));
+		max-width: 700px;
+		height: 900px;
+		box-shadow: 0 -3px 0 3px  rgb(228,171,40);
+	}
+
+
+	#slideshow{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	#slideshow img{
+		width: 900px;
+		box-shadow: 0 3px 0 8px white;
+	}
+
+	#quick-quote{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: space-around;
+		padding: 245px;
+		height: 400px;
+		max-width: 700px;
+		background-size: contain;
+		position: relative;
+		left: 102px;
+		border-radius: 5px;
+	}
+
+	#quick-quote h2{
+		font: 40px Arial bold;
+		display: flex;
+		align-items: center;
+		text-shadow: 4px 4px 8px black;
+	}
+
+	#quick-quote span{
+		padding: 5px;
+		font-size: 15px;
+	}
+
+	#quick-quote #in{
+		font: 18px "Trebuchet MS";
+		max-width: 400px;
+	}
+
+	#btn{
+		font-size: 12px;
+		max-width: 500px;
+	}
+
+	#main{
+		font-size: 15px;
+		width: 800px;
+	}
+
+	.container{ 
+		display: block;
+		justify-content:space-around;
+		width: 700px;
+		height: 400px;
+		padding: 70px;
+		margin: 20px 20px 40px 0px;
+		position: relative;
+		left: -15px;
+	}
+
+	.content{
+		width: 550px;
+	}
+
+	.para{
+		width: 350px;
+		height: 170px;
+		padding-top: 10px;
+		padding-right: 40px;
+	}
+
+	.box{
+		width: 170px;
+		height: 170px
+	}
+
+	.link{
+		font-size: 18px;
+	}
+
+	.ftElements{
+		width: 10px;
+	}
+
+	.ftElements, #privacy{
+		font-size: 10px;
+	}
+
+	#half1{
+		max-width: 350px;
+	}
+
+	#half2{
+		justify-content:space-between;
+		max-width:570px
+	}
+
+	#subscribe span{
+		position: relative;
+		top: -15px;
+		display: block;
+		font-size: 10px;
+		width: 500px;
+	}
+
+	#subscribe{
+		position: relative;
+		top: 80px;
+		left: -150px;
+		width: 700px;
+	}
+
+	#footer{
+		background-image: linear-gradient(rgb(119,114,84), rgb(52,42,41));
+		padding: 20px 0 80px 0;
+		max-width: 700px;
+		height: 130px;
+	}
+
+	#textbox{
+		width: 245px;
+		height: fit-content;
+	}
+
+	#ftIn{
+		position: relative;
+		top: -10px;
+	}
+	
+
+	#ftTb{
+		float: left;
+		width: 245px;
+	}
+
+	#ftBtn{
+		float: left;
+		position: relative;
+		top: -25px;
+		left: 30px;
+		width: 100px;
+	}
+
+	#footerBg{
+		visibility: hidden;
+	}
+
+/*Mobile*/
+@media screen and (max-width: 425px){
+	#wrapper{max-width: 425px;}
+	#nav ul{max-width: 450;}
+	a{font-size: 5px;}
+	#slideshow img{max-width: 400px;}
+	#banner{height: 700px;}
+	#quick-quote{position: relative; left:0; padding: 210px;}
+	#quick-quote h2{width:400px; font-size: 18px;}
+	.container{max-width: 425px; height: fit-content;}
+	.content{max-width: 425px;}
+	.para{height: 120px;}
+	.link{height: 30px; padding-top: 10px;}
+	#footer{max-width: 425px;}
+	#half1{max-width: 350px;}
+	#half2{max-width: 350px;}
+}
+}
